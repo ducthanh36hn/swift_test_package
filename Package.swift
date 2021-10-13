@@ -21,7 +21,11 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "TestPackage",
-            dependencies: []),
+            dependencies: [],
+            exclude: ["Resources/TODO.md"],
+            resources: [
+                .process("TestPackage/TestPackage.swift")
+            ]),
         .testTarget(
             name: "TestPackageTests",
             dependencies: ["TestPackage"]),
