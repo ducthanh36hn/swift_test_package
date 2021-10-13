@@ -1,5 +1,5 @@
-struct TestPackage {
-    var text = "Hello, World!"
+public struct TestPackage {
+    public var text = "Hello, World!"
     var isSucess = false
 }
 
